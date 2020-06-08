@@ -280,12 +280,12 @@ children = [
 
         html.Div(dbc.Button(id='submit-button-state', n_clicks=0, children='Enviar información',
                              outline=True, color="secondary",size="lg"),
-         style={'margin-left': 350, "margin-top": 25 }),
+         style={'margin-left': 450, "margin-top": 25 }),
 
 
         html.Div(id = "rta", 
-        style = {'fontSize': 25,"marginTop": 13, "font-family": "Calibri",  'color': colors['text'], "margin-top": 30, "margin-left": 350})
-    ], style = {"marginTop": 30})
+        style = {'fontSize': 25,"marginTop": 13, "font-family": "Calibri",  'color': colors['text'], "margin-top": 30, "margin-left": 450})
+    ], style = {"marginTop": 30, "margin-left": 30, "margin-right": 30})
 ])
 
 @app.callback(
