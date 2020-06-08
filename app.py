@@ -71,29 +71,29 @@ children = [
         dbc.Row(
             [
                 dbc.Col( html.H1("¿Qué rol ocupa en el establecimiento?", style= style_letter
-                        ),width=5  ),
+                        ),width=4  ),
 
                 dbc.Col(dcc.Dropdown(id = "rol_establecimiento", 
                                      options=[{'label':i, 'value': j} for i,j in zip (trabajadores,trabajadores)],
                                      value=''
-                        ),width=5, style = style_letter  ),
+                        ),width=4 , style = style_letter  ),
             ]
         ),
         dbc.Row(
             [
                 dbc.Col( html.H1("¿En qué Institución trabajas?", style= style_letter
-                        ),width= 5,  ),
+                        ),width=4 ,  ),
 
                 dbc.Col(dcc.Dropdown(id = "institucion_trabajo", 
                                     options=[{'label':i, 'value': j} for i,j in zip (["lugar1","lugar2"],["lugar1","lugar2"])],
                                     value=''
-                        ),width= 5, style = style_letter  ),
+                        ),width=4 , style = style_letter  ),
             ]
         ),
         dbc.Row(
             [
                 dbc.Col( html.H1("¿Estás en contacto con pacientes sospechosos de COVID?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "contacto_sospechosos", 
                                         options=[
@@ -101,13 +101,13 @@ children = [
                                             {'label': 'No', 'value': 'No'},
                                             ],
                                         value=''
-                        ),width= 5, style = style_letter  ),
+                        ),width= 4, style = style_letter  ),
             ]
         ),
         dbc.Row(
             [
                 dbc.Col( html.H1("¿Tenés contacto con pacientes antes de que se determine su diagnóstico?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "contacto_prediagnostico",
                                     options=[
@@ -115,14 +115,14 @@ children = [
                                             {'label': 'No', 'value': 'No'}
                                             ],
                                         value=''
-                        ),width= 5,style = style_letter   ),
+                        ),width= 4,style = style_letter   ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Estás al tanto del equipamiento necesario para atender a pacientes sospechosos de COVID-19?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "equipamiento_nec", 
                     
@@ -131,50 +131,50 @@ children = [
                                             {'label': 'No', 'value': 'No'}
                                             ],
                                         value=''
-                        ),width= 5,style = style_letter   ),
+                        ),width= 4,style = style_letter   ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Qué cantidad de barbijos quirúrgicos recibís por día?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "barbijos", 
                     options=[{'label':i, 'value': j} for i,j in zip (range(1, 20),range(1, 20)) ],
                                         value=''
-                        ),width= 5, style = style_letter  ),
+                        ),width= 4, style = style_letter  ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Qué cantidad de pares de guantes descartables recibís por día?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "guantes", 
                     options=[{'label':i, 'value': j} for i,j in zip (range(1, 20),range(1, 20)) ],
                                         value=''
-                        ),width= 5, style = style_letter  ),
+                        ),width= 4, style = style_letter  ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Qué cantidad de batas o camisolines recibís por día?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "batas", 
                     options=[{'label':i, 'value': j} for i,j in zip (range(1, 20),range(1, 20)) ],
                                         value=''
-                        ),width= 5, style = style_letter  ),
+                        ),width= 4, style = style_letter  ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Recibís gafas o protección ocular?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "gafas", 
                     options=[
@@ -182,14 +182,14 @@ children = [
                                             {'label': 'No', 'value': 'No'}
                                             ],
                                         value=''
-                        ),width= 5, style = style_letter  ),
+                        ),width= 4, style = style_letter  ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Recibís Barbijos N-95?", style= style_letter
-                        ),width= 5, style = style_letter  ),
+                        ),width= 4, style = style_letter  ),
 
                 dbc.Col(dcc.Dropdown(id = "barbijos_n95", 
                     options=[
@@ -197,14 +197,14 @@ children = [
                                             {'label': 'No', 'value': 'No'}
                                             ],
                                         value=''
-                        ),width= 5,  style = style_letter ),
+                        ),width= 4,  style = style_letter ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Recibís  fármacos necesarios para el tratamiento de pacientes con COVID 19?", style= style_letter
-                        ),width= 5,  ),
+                        ),width= 4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "farmacos", 
                     options=[
@@ -212,35 +212,35 @@ children = [
                                             {'label': 'No', 'value': 'No'}
                                             ],
                                         value=''
-                        ),width= 5,  style = style_letter ),
+                        ),width=4,  style = style_letter ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Si tu última respuesta fue no, cuál/es te faltan?", style= style_letter
-                        ),width= 5,  ),
+                        ),width=4,  ),
 
                 dbc.Col(dcc.Input(id = "input_farmacos", type = "text"
     
-                        ),width= 5, style = style_letter  ),
+                        ),width=4, style = style_letter  ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Qué insumo necesitarías como prioritario que no estás recibiendo?", style= style_letter
-                        ),width= 5,  ),
+                        ),width=4,  ),
 
                 dbc.Col(dcc.Input( id = "input_insumo_prioritario", type = "text"
-                        ),width= 5, style = style_letter  ),
+                        ),width=4, style = style_letter  ),
             ]
         ),
 
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Perteneces a algún grupo de riesgo (más de 60 años o enf. como cáncer, hipertensión, respiratoria crónica, diabetes o cardiovasculares)?", style= style_letter
-                        ),width= 5,  ),
+                        ),width=4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "grupo_riesgo",
                     options=[
@@ -248,7 +248,7 @@ children = [
                                             {'label': 'No', 'value': 'No'}
                                             ],
                                         value=''
-                        ),width= 5, style = style_letter  ),
+                        ),width= 4, style = style_letter  ),
             ]
         ),
 
@@ -257,7 +257,7 @@ children = [
                 dbc.Row(
             [
                 dbc.Col( html.H1("¿Querés formar parte de esta iniciativa para mejorar la gestión de recursos e insumos de tu centro? Dejanos un contacto más abajo (correo o tel).", style= style_letter
-                        ),width= 5,  ),
+                        ),width=4,  ),
 
                 dbc.Col(dcc.Dropdown(id = "parte_iniciativa",
                                      options=[
@@ -265,7 +265,7 @@ children = [
                                             {'label': 'No', 'value': 'No'}
                                             ],
                                         value=''
-                        ),width= 5, style = style_letter ),
+                        ),width=4, style = style_letter ),
             ]
         ),
 
@@ -275,7 +275,7 @@ children = [
                         ),width={"size":2, "offset":3  }),
 
                 dbc.Col(dcc.Input( id = "contacto", type = "text"
-                        ),width= 5, style = style_letter ),
+                        ),width=4, style = style_letter ),
             ]
         ),
 
