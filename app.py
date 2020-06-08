@@ -284,8 +284,8 @@ children = [
 
 
         html.Div(id = "rta", 
-        style = {'fontSize': 25,"marginTop": 13, "font-family": "Calibri",  'color': colors['text'], "margin-top": 30, "margin-left": 540})
-    ], style = { "marginLeft": 350, "marginTop": 30})
+        style = {'fontSize': 25,"marginTop": 13, "font-family": "Calibri",  'color': colors['text'], "margin-top": 30, "margin-left": 350})
+    ], style = {"marginTop": 30})
 ])
 
 @app.callback(
