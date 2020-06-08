@@ -12,6 +12,7 @@ external_stylesheets = [dbc.themes.BOOTSTRAP,] #'https://codepen.io/chriddyp/pen
 
 
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
 
 
 image_filename = 'Logo_White.png' # replace with your own image
