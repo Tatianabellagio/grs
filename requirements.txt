@@ -6,3 +6,5 @@ dash-html-components==1.0.3
 dash-renderer==1.4.1
 dash-table==4.7.0
 pandas==0.25.3
+gunicorn==19.9.0
+
